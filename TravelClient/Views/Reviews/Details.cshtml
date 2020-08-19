@@ -11,4 +11,6 @@
   <li>@Html.DisplayNameFor(r => r.Rating): @Html.DisplayFor(r => r.Rating)</li>
 </ul>
 
+@Html.ActionLink("Edit this destination", "Update", new { id = Model.ReviewId})
+@Html.ActionLink("Delete this destination", "Delete", new { id = Model.ReviewId})
 @Html.ActionLink("Back", "Index")

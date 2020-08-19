@@ -1,10 +1,11 @@
 <h1>All Reviews:</h1>
 
-@Html.ActionLink($"{review.Destination}", "Details", "Reviews", new { id = review.ReviewId })
-<br>
+@Html.ActionLink("Create new Destination", "Create")
+
 <ol>
 @foreach (Review review in Model)
 {
+  @Html.ActionLink($"{review.Destination}", "Details", "Reviews", new { id = review.ReviewId })
   <ul>
     <li>ID: @review.ReviewId</li>
     <li>Destination: @review.Destination</li>
@@ -12,7 +13,6 @@
     <li>Country: @review.Country</li>
     <li>Rating: @review.Rating</li>
   </ul>
-  
   <br>
 }
 </ol>

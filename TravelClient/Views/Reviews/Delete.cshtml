@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+@model TravelClient.Models.Review
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(r => r.ReviewId)
+  @Html.HiddenFor(r => r.Destination)
+  @Html.HiddenFor(r => r.Country)
+  @Html.HiddenFor(r => r.Description)
+  @Html.HiddenFor(r => r.Rating)
+  <input type="submit" value="Confirm Delete?" class="btn btn-warning" />
+}

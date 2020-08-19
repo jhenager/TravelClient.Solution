@@ -1,0 +1,19 @@
+@{
+  Layout = "_Layout";
+}
+
+@model TravelClient.Models.Review
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(r => r.ReviewId)
+  @Html.LabelFor(r => r.Destination)
+  @Html.TextBoxFor(r => r.Destination)
+  @Html.LabelFor(r => r.Country)
+  @Html.TextBoxFor(r => r.Country)
+  @Html.LabelFor(r => r.Description)
+  @Html.TextBoxFor(r => r.Description)
+  @Html.LabelFor(r => r.Rating)
+  @Html.TextBoxFor(r => r.Rating)
+  <input type="submit" value="Update Review" class="btn btn-primary" />
+}
