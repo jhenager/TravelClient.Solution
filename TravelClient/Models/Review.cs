@@ -2,8 +2,9 @@ using System.Collections.Generic;
 using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.ComponentModel.DataAnnotations;
 
-namespace Travel.Models
+namespace TravelClient.Models
 {
   public class Review
   { 

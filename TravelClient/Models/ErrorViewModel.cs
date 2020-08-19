@@ -1,6 +1,6 @@
 using System;
 
-namespace travelclient.Models
+namespace TravelClient.Models
 {
     public class ErrorViewModel
     {
