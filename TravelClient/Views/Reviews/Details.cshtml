@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+
+@model TravelClient.Models.Review
+
+<h1>@Html.DisplayFor(r => r.Destination), @Html.DisplayFor(r => r.Country)</h1>
+
+<ul>
+  <li>@Html.DisplayNameFor(r => r.Description): @Html.DisplayFor(r => r.Description)</li>
+  <li>@Html.DisplayNameFor(r => r.Rating): @Html.DisplayFor(r => r.Rating)</li>
+</ul>
+
+@Html.ActionLink("Back", "Index")

@@ -14,5 +14,12 @@ namespace TravelClient.Controllers
       var allReviews = Review.GetReviews();
       return View(allReviews);
     }
+
+    //[Route("reviews/details/{id}")]
+    public IActionResult Details(int id)
+    {
+      var thisReview = Review.GetDetails(id);
+      return View(thisReview);
+    }
   }
 }
