@@ -32,7 +32,7 @@ namespace TravelClient.Controllers
     public IActionResult Create(Review review)
     {
       Review.Post(review);
-      return RedirectToAction("Details", new { id = review.ReviewId });
+      return RedirectToAction("Index");
     }
 
     [HttpGet]
@@ -46,7 +46,7 @@ namespace TravelClient.Controllers
     public IActionResult Update(Review review)
     {
       Review.Put(review);
-      return RedirectToAction("Details", new { id = review.ReviewId });
+      return RedirectToAction("Index");
     }
 
     [HttpGet]
