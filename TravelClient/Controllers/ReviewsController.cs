@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using TravelClient.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace TravelClient.Controllers
 {
@@ -57,9 +58,8 @@ namespace TravelClient.Controllers
     }
 
     [HttpPost]
-    public IActionResult Delete(Review review)
+    public ActionResult Delete(Review review)
     {
-      Review.Delete(review.ReviewId);
       return RedirectToAction("Index");
     }
   }
