@@ -22,35 +22,41 @@ namespace TravelClient.Controllers
       return View(thisReview);
     }
 
+    [HttpGet]
     public IActionResult Create()
     {
       return View();
     }
 
+    [HttpPost]
     public IActionResult Create(Review review)
     {
       Review.Post(review);
       return RedirectToAction("Details", new { id = review.ReviewId });
     }
 
+    [HttpGet]
     public IActionResult Update(int id)
     {
       Review review = Review.GetDetails(id);
       return View(review);
     }
 
+    [HttpPost]
     public IActionResult Update(Review review)
     {
       Review.Put(review);
       return RedirectToAction("Details", new { id = review.ReviewId });
     }
 
+    [HttpGet]
     public IActionResult Delete(int id)
     {
       Review review = Review.GetDetails(id);
       return View(review);
     }
 
+    [HttpPost]
     public IActionResult Delete(Review review)
     {
       Review.Delete(review.ReviewId);
