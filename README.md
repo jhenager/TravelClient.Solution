@@ -7,16 +7,17 @@
 ## <h4 align = "center"> Micheal Hansen
 ## <h4 align = "center"> Beverly Potts
 
-## <h2 align = "center"> About
+##<h2 align = "center"> About
 
-<p align = "center"> This API Client application provides a user interface for a travel review API, with multiple endpoints to return reviews, as well as all review properties.
-## **✅REQUIREMENTS**
+##<p align = "center"> This API Client application provides a user interface for a travel review API, with multiple endpoints to return reviews, as well as all review properties.
+<br>
+##**REQUIREMENTS**
 * Install [Git v2.62.2+](https://git-scm.com/downloads/)
 * Install [.NET version 3.1 SDK v2.2+](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 * Install [Visual Studio Code](https://code.visualstudio.com/)
 * Install [MySql Workbench](https://www.mysql.com/products/workbench/)
 
-## **💻SETUP**
+**💻 SETUP**
 * to clone this content, copy the url provided by the 'clone or download' button in GitHub
 * in command line use the command 'git clone (GitHub url)'
 * open the program in a code editor
