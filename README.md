@@ -7,7 +7,7 @@
 ## <h4 align = "center"> Micheal Hansen
 ## <h4 align = "center"> Beverly Potts
 
-##<h2 align = "center"> About
+<h2 align = "center"> About
 
 <p align = "center"> This API Client application provides a user interface for a travel review API, with multiple endpoints to return reviews, as well as all review properties.
 <br>
